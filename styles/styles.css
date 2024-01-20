@@ -98,7 +98,8 @@ main {
 .post-container {
   background-color: #edf7fa;
   width: 100%;
-  height: 396px;
+  min-height: 396px;
+  height: 100%;
   margin: auto;
   margin-top: 50px;
   display: flex;
@@ -119,7 +120,7 @@ main {
   justify-content: center;
 }
 .posts {
-  color: #21243d;
+  color: #2d2f3b;
   font-size: 22px;
   font-weight: 400;
   line-height: 60px;
@@ -144,10 +145,10 @@ main {
   transition: transform 0.5s;
 }
 .card1:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .card2:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .design {
   color: #21243d;
@@ -174,9 +175,95 @@ main {
   height: 117px;
   line-height: normal;
 }
-.featuredworks {
+.Featured-works {
   margin-top: 15px;
-  text-align: center;
+  color: #21243d;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 272.727% */
+}
+.project-container {
+  width: 100%;
+  min-height: 396px;
+  height: 100%;
+}
+.project-wrapper {
+  max-width: 1250px;
+  width: 100%;
+  min-height: 243px;
+  height: 100%;
+  margin: auto;
+}
+.project1,
+.project2,
+.project3 {
+  display: flex;
+  margin: 46px;
+}
+.date2020 {
+  border-radius: 16px;
+  background: #142850;
+  padding: 0px 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+}
+.dash {
+  display: flex;
+  color: #8695a4;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.amet {
+  width: 594px;
+  height: 93px;
+  padding-top: 17px;
+  color: #21243d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.xp h3 {
+  color: #21243d;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.xp {
+  padding-left: 18px;
+}
+.dashboard {
+  padding-left: 26px;
+  align-items: center;
+}
+footer {
+  width: 100%;
+  height: 182px;
+  background: #fff;
+  margin-top: 87px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-nav-list {
+  display: flex;
+  column-gap: 35px;
+}
+.Copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  color: var(--Dark, #21243d);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @media (max-width: 768px) {
@@ -205,6 +292,8 @@ main {
     font-weight: 700;
     line-height: 40px; /* 125% */
     margin-top: 43px;
+    max-width: 312px;
+    width: 100%;
   }
   .img-content img {
     width: 100%;
@@ -214,5 +303,93 @@ main {
     margin-top: 43px;
     font-size: 16px;
     font-weight: 400;
+  }
+  .text a {
+    display: none;
+  }
+  .posts-list {
+    row-gap: 17px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 38px;
+  }
+  .text {
+    justify-content: center;
+  }
+  .text h3 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 333.333% */
+  }
+  .post-container {
+    margin-top: 70px;
+  }
+  .card1,
+  .card2 {
+    width: 100%;
+    max-width: 354px;
+    height: 266px;
+    padding: 12px 8px 22px 19px;
+  }
+  .card1:hover {
+    transform: scale(1);
+  }
+  .card2:hover {
+    transform: scale(1);
+  }
+  .design {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 136.364% */
+  }
+  .date {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .lorem {
+    max-width: 368px;
+    width: 100%;
+  }
+  .Featured-works {
+    text-align: center;
+    font-size: 18px;
+  }
+  .project2,
+  .project3 {
+    display: none;
+  }
+  .project1 {
+    flex-direction: column;
+  }
+  .amet {
+    max-width: 366px;
+    width: 100%;
+  }
+  .xp h3 {
+    color: #21243d;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+  }
+  .dashboard {
+    font-size: 16px;
+  }
+  .date2020 {
+    font-size: 16px;
+  }
+  .amet {
+    font-size: 16px;
+  }
+  .dash {
+    margin-top: 16px;
+  }
+  .xp {
+    padding-left: 0px;
   }
 }
