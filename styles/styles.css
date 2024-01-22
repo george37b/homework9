@@ -12,7 +12,7 @@ header {
   padding: 10px 0px;
 }
 .logo {
-  width: 64px;
+  width: 99px;
 }
 .nav-list {
   display: flex;
@@ -150,6 +150,7 @@ main {
 .card2:hover {
   transform: scale(1.1);
 }
+
 .design {
   color: #21243d;
   font-size: 26px;
@@ -253,6 +254,10 @@ footer {
 .footer-nav-list {
   display: flex;
   column-gap: 35px;
+  transition: transform 0.5s;
+}
+.footer-nav-list img:hover {
+  transform: scale(1.2);
 }
 .Copyright {
   display: flex;
@@ -278,7 +283,7 @@ footer {
     cursor: pointer;
   }
   .logo {
-    width: 48px;
+    width: 60px;
   }
   main {
     flex-direction: column-reverse;
@@ -292,9 +297,11 @@ footer {
     font-weight: 700;
     line-height: 40px; /* 125% */
     margin-top: 43px;
-    max-width: 312px;
+    max-width: 316px;
     width: 100%;
+    margin-left: 10px;
   }
+
   .img-content img {
     width: 100%;
     max-width: 400px;
@@ -359,16 +366,15 @@ footer {
     text-align: center;
     font-size: 18px;
   }
+  .project1,
   .project2,
   .project3 {
-    display: none;
-  }
-  .project1 {
     flex-direction: column;
   }
   .amet {
     max-width: 366px;
     width: 100%;
+    margin-bottom: 50px;
   }
   .xp h3 {
     color: #21243d;
@@ -391,5 +397,13 @@ footer {
   }
   .xp {
     padding-left: 0px;
+  }
+  .footer-nav-list {
+    display: flex;
+    column-gap: 35px;
+    transition: transform 0.5s;
+  }
+  .footer-nav-list img:hover {
+    transform: scale(1.2);
   }
 }
